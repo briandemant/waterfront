@@ -1,7 +1,7 @@
-var waterfront = require("../").connect()
-var sock       = waterfront.socket('req')
+var zmqp = require("../").connect()
+var sock = zmqp.socket('req')
 
-sock.send({ req: +new Date }, function(rep){
-  console.log(rep)
-  process.exit()
+sock.send({ req : +new Date }, function(rep) {
+	console.log(rep)
+	process.exit()
 });

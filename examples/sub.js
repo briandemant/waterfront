@@ -1,6 +1,6 @@
-var waterfront = require('../').connect()
-var sock       = waterfront.socket("sub")
+var zmqp = require('../').connect()
+var sock = zmqp.socket("sub")
 
-sock.on("message", function(msg){
-  console.log(msg)
+sock.on("message", function(msg) {
+	console.log(msg)
 })

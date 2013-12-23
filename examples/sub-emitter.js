@@ -1,6 +1,6 @@
-var waterfront = require('../').connect()
-var sock       = waterfront.socket('sub-emitter')
+var zmqp = require('../').connect()
+var sock = zmqp.socket('sub-emitter')
 
-sock.on('*', function(channel, data){
-  console.log(channel, data)
+sock.on('*', function(channel, data) {
+	console.log(channel, data)
 })

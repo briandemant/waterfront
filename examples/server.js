@@ -1,3 +1,3 @@
-var waterfront = require("../")
+var zmqp = require("../")
 
-waterfront.listen()
+zmqp.listen()

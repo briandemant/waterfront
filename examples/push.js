@@ -1,7 +1,7 @@
-var waterfront = require('../').connect()
-var sock       = waterfront.socket('push')
+var zmqp = require('../').connect()
+var sock = zmqp.socket('push')
 
-setInterval(function(){
-  process.stdout.write('.')
-  sock.send({ "date" : (+new Date) })
+setInterval(function() {
+	process.stdout.write('.')
+	sock.send({ "date" : (+new Date) })
 }, 200)

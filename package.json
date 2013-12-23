@@ -1,8 +1,8 @@
 {
-  "name": "waterfront",
+  "name": "zmqp",
   "version": "0.5.0",
   "description": "a small but mighty message broker",
-  "main": "./waterfront.js",
+  "main": "./zmqp.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
@@ -16,5 +16,5 @@
     "mocha": "1.10.0",
     "should": "1.2.2"
   },
-  "bin": { "waterfront": "./bin/waterfront" }
+  "bin": { "zmqp": "./bin/zmqp" }
 }
